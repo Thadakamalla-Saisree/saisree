@@ -1,0 +1,23 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/Saisree project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/coder/project/workspace/jenkins/workspace/Saisree project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Thadakamalla-Saisree/saisree.git # timeout=10
+Fetching upstream changes from https://github.com/Thadakamalla-Saisree/saisree.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/Thadakamalla-Saisree/saisree.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision de0144f878ad1978501327ad64a7ba7a997913c9 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f de0144f878ad1978501327ad64a7ba7a997913c9 # timeout=10
+Commit message: "Initial commit"
+ > git rev-list --no-walk de0144f878ad1978501327ad64a7ba7a997913c9 # timeout=10
+[Saisree project] $ /bin/sh -xe /tmp/jenkins16131759595493673039.sh
++ python3 jenkins.py
+python3: can't open file '/home/coder/project/workspace/jenkins/workspace/Saisree project/jenkins.py': [Errno 2] No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
